@@ -1,0 +1,93 @@
+
+body{
+    background: #1E1E1E;
+}
+
+header{
+    background: #252526;
+}
+
+nav{
+    border-radius: 10%;
+}
+
+.logo{
+    width: 8%;
+}
+
+@media screen and (max-width: 487px) {
+    .logo {
+        width: 15%; 
+        }
+    }
+
+@media screen and (min-width: 487px) and (max-width: 1079px) {
+    .logo {
+        width: 10%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .logo {
+        width: 6%;;
+    }
+}
+
+.logo-name{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #FF463C;
+    font-size: 200%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.navItem1{
+    margin-left: 20px;
+}
+
+.navItem2{
+    margin-left: 10px;
+    color: white;
+}
+
+.banner{
+    width: 100%;
+}
+
+#movieSection{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    color: #C4C4C4;
+}
+
+.card{
+    background-color: #2D2D2D;
+}
+
+.card-title1{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.list-group-item{
+    background-color: #3C3C3C;
+    color: #C4C4C4;
+}
+
+.card-body1{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5%;
+}
+
+footer{
+    background: #37373D;
+    color: azure;
+}
+
+.copi{
+    color: #C4C4C4;
+}
