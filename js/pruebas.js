@@ -65,3 +65,20 @@ req.open('GET', 'http://localhost:3000/peliculas', false);
 req.send(null);
 if (req.status == 200)
   dump(req.responseText);*/
+
+  /*fetchMoviesJSON().then(movies => {
+    console.log(movies)
+    for (let index = 0; index < movies.length; index++){
+    
+        let title = movies[index].titulo;
+        let director = movies[index].director;
+        let img = movies[index].img;
+        let genre = movies[index].clasificacion;
+        let year = movies[index].year;
+        let sinopsis = movies[index].sinopsis;
+        let cast = movies[index].reparto;
+        let adapt = movies[index].adaptacion;
+        let rating = movies[index].rating;
+
+        movieSection.innerHTML += 
+}})*/

@@ -1,5 +1,5 @@
 {
-  "peliculas": [
+  "movies": [
     {
       "id": 1,
       "titulo": "Pulp Fiction",
@@ -90,8 +90,8 @@
       "img": "https://pics.filmaffinity.com/the_dark_knight-102763119-mmed.jpg",
       "rating": "9,2/10",
       "comentario": ""
-      },
-      {
+    },
+    {
       "id": 8,
       "titulo": "The Dark Knight",
       "director": "Cristopher Nolan",
@@ -103,8 +103,8 @@
       "img": "https://pics.filmaffinity.com/the_dark_knight-102763119-mmed.jpg",
       "rating": "9,2/10",
       "comentario": ""
-      },
-      {
+    },
+    {
       "id": 9,
       "titulo": "The Dark Knight",
       "director": "Cristopher Nolan",
@@ -116,8 +116,8 @@
       "img": "https://pics.filmaffinity.com/the_dark_knight-102763119-mmed.jpg",
       "rating": "9,2/10",
       "comentario": ""
-      },
-      {
+    },
+    {
       "id": 10,
       "titulo": "The Dark Knight",
       "director": "Cristopher Nolan",
@@ -129,8 +129,8 @@
       "img": "https://pics.filmaffinity.com/the_dark_knight-102763119-mmed.jpg",
       "rating": "9,2/10",
       "comentario": ""
-      },
-      {
+    },
+    {
       "id": 11,
       "titulo": "The Dark Knight",
       "director": "Cristopher Nolan",
@@ -142,8 +142,8 @@
       "img": "https://pics.filmaffinity.com/the_dark_knight-102763119-mmed.jpg",
       "rating": "9,2/10",
       "comentario": ""
-      },
-      {
+    },
+    {
       "id": 12,
       "titulo": "The Dark Knight",
       "director": "Cristopher Nolan",
@@ -155,6 +155,6 @@
       "img": "https://pics.filmaffinity.com/the_dark_knight-102763119-mmed.jpg",
       "rating": "9,2/10",
       "comentario": ""
-      }
+    }
   ]
 }

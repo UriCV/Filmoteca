@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="navItem1" class="nav-item">
-                        <form class="nav-link active" aria-current="page" href="#" class="add-movie-form">Add Film/Serie+</form>
+                        <a class="nav-link active" aria-current="page" href="#" id="add-movie-form">Add Film/Serie+</a>
                     </li>
                     <li class="navItem2" class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropdown">Sort By</a>
@@ -42,6 +42,19 @@
             </div>
         </section>
     </nav>
+    <form class="movie-form" style="">
+        <h3>I've recently watched</h3>
+        <input type="text" name="titulo" value="" placeholder="Enter a title" class="input-text">
+        <input type="text" name="img" value="" placeholder="Enter a film's image URL..." class="input-text">
+        <input type="text" name="director" value="" placeholder="Director" class="input-text">
+        <input type="text" name="year" value="" placeholder="Release year" class="input-text">
+        <input type="text" name="clasificacion" value="" placeholder="Genre" class="input-text">
+        <input type="text" name="reparto" value="" placeholder="Cast" class="input-text">
+        <input type="text" name="sinopsis" value="" placeholder="Plot" class="input-text">
+        <input type="text" name="adaptacion" value="" placeholder="Is it an adapted story?" class="input-text">
+        <input type="text" name="rating" value="" placeholder="From 1 to 10" class="input-text">
+        <input type="submit" name="submit" value="Add" class="submit">
+    </form>
     <img class="banner" src="./resources/banner.jpg">
 </header>
 <body>
@@ -57,3 +70,14 @@
     <!-- Copyright -->
 </footer>
 </html>
+
+        <!--
+        <input type="text" name="year" value="" placeholder="Release year" class="input-text">
+        <input type="text" name="clasificacion" value="" placeholder="Genre" class="input-text">
+        <input type="text" name="reparto" value="" placeholder="Cast" class="input-text">
+        <input type="text" name="sinopsis" value="" placeholder="Plot" class="input-text">
+        <input type="text" name="adaptacion" value="" placeholder="Is it an adapted story?" class="input-text">
+        <input type="text" name="rating" value="" placeholder="From 1 to 10" class="input-text">
+        <input type="submit" name="submit" value="Add" class="submit">-->
+
+        <!--<input type="text"name="id" value="" placeholder="id" class="input-text">-->

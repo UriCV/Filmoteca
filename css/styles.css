@@ -33,6 +33,17 @@ nav{
     }
 }
 
+.container{
+    display: flex;
+}
+
+.movie-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
 .logo-name{
     font-family: 'Be Vietnam Pro', sans-serif;
     color: #FF463C;
