@@ -34,14 +34,27 @@ nav{
 }
 
 .container{
-    display: flex;
+    display: none;
+    justify-content: space-evenly;
+}
+
+.form-img{
+    width: 85vh;
+    height: 70vh;
+    margin-top: 1.75%;
+}
+
+.form-title{
+    color: #C4C4C4;
 }
 
 .movie-form{
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 3%;
     gap: 10px;
-    width: 50%;
+    width: 30%;
 }
 
 .logo-name{

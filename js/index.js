@@ -9,34 +9,35 @@ async function fetchMoviesJSON(){
 
 const movieCollection = document.getElementById('movieSection')
 function renderMovies(movies) {
-  movieCollection.innerHTML = ""
-  movies.forEach(function (movie) {
-    movieCollection.innerHTML += `
-    <div class="card" style="width: 18rem;">
-        <img src="${movie.img}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h4 class="card-title1">${movie.titulo}</h4>
-            <h5 class="card-title">${movie.director}</h5>
-            <h6 class="card-title">${movie.year}</h6>
-            <h6 class="card-title">${movie.clasificacion}</h6>
-            <p class="card-text">${movie.sinopsis}</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>Cast: </strong>${movie.reparto}</li>
-            <li class="list-group-item"><strong>Adaptation: </strong>${movie.adaptacion}</li>
-            <li class="list-group-item"><strong>Rating: </strong>${movie.rating}</li>
-        </ul>
-        <div class="card-body1">
-            <button type="button" class="btn btn-outline-danger">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Add Comment</button>
-            <button type="button" class="btn btn-danger">Delete</button>
-        </div>
-    </div>`
-  })
+    movieCollection.innerHTML = ""
+    movies.forEach(function (movie) {
+        movieCollection.innerHTML += `
+        <div class="card" style="width: 18rem;">
+            <img src="${movie.img}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title1">${movie.titulo}</h4>
+                <h5 class="card-title">${movie.director}</h5>
+                <h6 class="card-title">${movie.year}</h6>
+                <h6 class="card-title">${movie.genre}</h6>
+                <p class="card-text">${movie.sinopsis}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Cast: </strong>${movie.cast}</li>
+                <li class="list-group-item"><strong>Adaptation: </strong>${movie.adaptacion}</li>
+                <li class="list-group-item"><strong>Rating: </strong>${movie.rating}</li>
+            </ul>
+            <div class="card-body1">
+                <button type="button" class="btn btn-outline-danger">Edit</button>
+                <button type="button" class="btn btn-outline-danger">Add Comment</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+        </div>`
+    })
 }
 
 const addBtn = document.querySelector('#add-movie-form')
-const movieForm = document.querySelector('.movie-form')
+const movieForm = document.querySelector('.container')
+const addMovieForm = document.querySelector('.movie-form')
 let addMovie = false
 
 addBtn.addEventListener('click', () => {
@@ -50,8 +51,7 @@ addBtn.addEventListener('click', () => {
     }
 })
 
-const addMovieForm = document.querySelector('.movie-form')
-addMovieForm.addEventListener('submit', function (event) { //submit se refiere al boton que le damos en el formulario para añadir un elemento 
+addMovieForm.addEventListener('submit', function (event) {
     fetch(requestURL, {
         method: 'POST',
         headers: {
@@ -62,8 +62,8 @@ addMovieForm.addEventListener('submit', function (event) { //submit se refiere a
             img: `${event.target.img.value}`,
             director: `${event.target.director.value}`,
             year: `${event.target.year.value}`,
-            clasificacion: `${event.target.clasificacion.value}`,
-            reparto: `${event.target.reparto.value}`,
+            genre: `${event.target.genre.value}`,
+            cast: `${event.target.cast.value}`,
             sinopsis: `${event.target.sinopsis.value}`,
             adaptacion: `${event.target.adaptacion.value}`,
             rating: `${event.target.rating.value}`
@@ -78,16 +78,3 @@ document.addEventListener('DOMContentLoaded', () => {
         renderMovies(movies);
     })
 })
-
-/*
-director: `${event.target.director.value}`,
-year: `${event.target.year.value}`,
-clasificacion: `${event.target.clasificacion.value}`,
-reparto: `${event.target.reparto.value}`,
-sinopsis: `${event.target.sinopsis.value}`,
-,
-img: `${event.target.img.value}`,
-rating: `${event.target.rating.value}`,
-comentario: `${event.target.comentario.value}`*/
-
-//id: `${event.target.id.value}`,
