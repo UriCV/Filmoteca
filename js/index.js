@@ -12,7 +12,7 @@ function renderMovies(movies) {
     movieCollection.innerHTML = ""
     movies.forEach(function (movie) {
         movieCollection.innerHTML += `
-        <div class="card" style="width: 18rem;">
+        <div class="card" data-id:${movie.id} style="width: 18rem;">
             <img src="${movie.img}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h4 class="card-title1">${movie.titulo}</h4>
@@ -26,10 +26,10 @@ function renderMovies(movies) {
                 <li class="list-group-item"><strong>Adaptation: </strong>${movie.adaptacion}</li>
                 <li class="list-group-item"><strong>Rating: </strong>${movie.rating}</li>
             </ul>
-            <div class="card-body1">
+            <div class="card-bottom">
                 <button type="button" class="btn btn-outline-danger">Edit</button>
                 <button type="button" class="btn btn-outline-danger">Add Comment</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button onclick="deleteFilm(${movie.id})" type="button" class="delete-btn btn btn-danger">Delete</button>
             </div>
         </div>`
     })
@@ -78,3 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
         renderMovies(movies);
     })
 })
+
+function deleteFilm(id){
+    fetch(`http://localhost:3000/movies/${id}`, {
+        method: 'DELETE'
+    })
+    .then(response => response.json())
+    .then(fetchMoviesJSON)
+}
