@@ -1,4 +1,4 @@
-const requestURL = 'http://localhost:3000/movies'
+/*const requestURL = 'http://localhost:3000/movies'
 
 
 async function fetchMoviesJSON(){

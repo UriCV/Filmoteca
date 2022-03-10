@@ -1,3 +1,4 @@
+/*
 //el archivo JSON lo convierto a un array y lo guardo en la variable series
 var series;
 

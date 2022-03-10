@@ -1,3 +1,4 @@
+/*
 //el archivo JSON lo convierto a un array y lo guardo en la variable series
 var series;
 
@@ -34,6 +35,7 @@ function save(index) {
     //como la variable series
     loadData();
 }
+*/
 
 /*myArray
 let index = 0; index < movies.peliculas.length
@@ -83,7 +85,7 @@ if (req.status == 200)
         movieSection.innerHTML += 
 }})*/
 
-const toyCollection = document.getElementById('toy-collection')
+/*const toyCollection = document.getElementById('toy-collection')
 toyCollection.addEventListener('click', function (event) {
   let likeButtonIsPressed = event.target.className === "like-btn"
   let delButtonIsPressed = event.target.className === "delete-btn"
@@ -96,5 +98,5 @@ toyCollection.addEventListener('click', function (event) {
     .then(response => response.json())
     .then(fetchToys)
   }
-})
+})*/
 
