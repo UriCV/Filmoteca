@@ -29,3 +29,12 @@ En futuras versiones el usuario tendrá la posibilidad de editar la información
 
 <h2>El repo:</h2>
 Este proyecto contiene carpetas, entre ellas están la carpeta con el documento JS funcional, una carpeta llamada pruebasJS con documentos JavaScript que no son útiles para el funcionamiento de la página y que contienen varias funciones para hacer pruebas. También está la carpeta CSS para el documento .css. También está la carpeta de recursos con imágenes y cosas útiles para el proyecto. Por último consta de dos archivos, el html y el json que funciona como nuestra fake API.
+
+<h2>Herramientas:</h2>
+JavaScript, .html, .css, notación .json, Bootsrap, Postman y VS Code.
+
+
+<h2>Creado por:</h2>
+Oriol Codina
+
+<h2>Agradecimientos a Factoria F5 por hacer posible esta formación.</h2>
