@@ -83,3 +83,34 @@ if (req.status == 200)
 
         movieSection.innerHTML += 
 }})*/
+
+/*const toyCollection = document.getElementById('toy-collection')
+toyCollection.addEventListener('click', function (event) {
+  let likeButtonIsPressed = event.target.className === "like-btn"
+  let delButtonIsPressed = event.target.className === "delete-btn"
+  if (likeButtonIsPressed) {
+    let id = event.target.parentElement.dataset.id
+    let like = event.target.previousElementSibling
+    let likeCount = parseInt(event.target.previousElementSibling.innerText)
+    like.innerText = `${++likeCount} likes`
+fetch(`http://localhost:3000/toys/${id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        likes: likeCount
+      })
+    })
+    .then(response => response.json())
+  }
+
+  else if (delButtonIsPressed) {
+    let id = event.target.parentElement.dataset.id
+    fetch(`http://localhost:3000/toys/${id}`, {
+      method: 'DELETE'
+    })
+    .then(response => response.json())
+    .then(fetchToys)
+  }
+})*/
