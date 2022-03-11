@@ -4,7 +4,7 @@
 Este proyecto es parte de la formación de desarrollo web impartida por factoría f5. El objetivo es crear un documento .JSON que servirá de base de datos y con un servidor local conseguir acceder a su información además de editarla. La intención de esta práctica es entender el CRUD, acrónimo para crear, leer editar y borrar, concepto estrechamente vinculado al manejo de las bases de datos. Todo esto a través de una fake Api. En este proyecto el reto principal ha sido conseguir que la página sea capaz de recoger la información y enseñarla en pantalla. Los otros elementos del CRUD son opcionales.
 
 <h2>La página:</h2>
-My Movies es una manera fácil y rápida de organizar las películas que has visto y tener tu filmoteca personal en línea. Las funciones principales de la página son la capacidad de ver tu filmoteca personal además de poder añadir películas y eliminarlas.
+My Movies es una manera fácil y rápida de organizar las películas que has visto y tener tu filmoteca personal en línea. Las funciones principales de la página son la capacidad de ver tu filmoteca personal además de poder añadir y eliminar películas.
 
 <h2>Como se utiliza:</h2>
 Para empezar se debe clonar el repositorio y abrir un servidor local. Esto se puede hacer con los comandos en, por ejemplo, la terminal de VScode. Luego deberemos utilizar los comandos para ejecutar el servidor .json.
