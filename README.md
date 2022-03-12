@@ -24,6 +24,10 @@ Hecho esto lo último que queda es abrir la página en nuestro navegador con el 
 <h2>Cómo utilizar:</h2>
 Para poder añadir una película a nuestra librería deberemos hacer click en Add Film en la parte superior para que se despliegue el formulario (tenga en cuenta que se deben rellenar todos los campos del formulario para que funcione). Por último podemos eliminar las películas ya creadas con el botón delete. La página es responsive y se puede utilizar en todo tipo de dispositivos.
 
+<h2>Bugs y consejos:</h2>
+La página tiene un bug que no permite añadir una entrada si no se rellenan todos los datos del formulario. Cabe destacar que para añadir las imágenes de las películas es recomendable utilizar las imágenes de la página de filmaffinity que tiene las carátulas originales de las películas con el mismo tamaño para que nos cuadre bien.
+
+
 <h2>Futuras versiones:</h2>
 En futuras versiones el usuario tendrá la posibilidad de editar la información ya añadida (Update del CRUD) además de disponer de un buscador y filtros para navegar con más facilidad en la filmoteca. Cabe destacar que en próximas versiones también se tiene el objetivo de añadir una página de inicio así como una forma más ágil y estética de ver la información de las películas, ya sea con desplegables o abriendo el título que se desee consultar en otra página. Además de la capacidad de añadir comentarios y la posibilidad de poner las películas en una lista de ¨pendientes por ver¨.
 
