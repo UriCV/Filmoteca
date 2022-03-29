@@ -23,7 +23,6 @@ function renderMovies(movies) {
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><strong>Cast: </strong>${movie.cast}</li>
-                <li class="list-group-item"><strong>Adaptation: </strong>${movie.adaptacion}</li>
                 <li class="list-group-item"><strong>Rating: </strong>${movie.rating}</li>
             </ul>
             <div class="card-bottom">
@@ -65,7 +64,6 @@ addMovieForm.addEventListener('submit', function (event) {
             genre: `${event.target.genre.value}`,
             cast: `${event.target.cast.value}`,
             sinopsis: `${event.target.sinopsis.value}`,
-            adaptacion: `${event.target.adaptacion.value}`,
             rating: `${event.target.rating.value}`
         })
     })
