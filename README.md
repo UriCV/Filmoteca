@@ -1,44 +1,46 @@
 # Filmoteca
 
-<h2>Intro:</h2>
-Este proyecto es parte de la formación de desarrollo web impartida por factoría f5. El objetivo es crear un documento .JSON que servirá de base de datos y con un servidor local conseguir acceder a su información además de editarla. La intención de esta práctica es entender el CRUD, acrónimo para crear, leer editar y borrar, concepto estrechamente vinculado al manejo de las bases de datos. Todo esto a través de una fake Api. En este proyecto el reto principal ha sido conseguir que la página sea capaz de recoger la información y enseñarla en pantalla. Los otros elementos del CRUD son opcionales.
+## About the project
+This project is part of a formation course by FactoriaF5 where de main goal is to adquire the ability to create a fully functional web page that can acces a fake api and gives the user the possibility to do the CRUD (Create, Read, Update and Delete).
 
-<h2>La página:</h2>
-My Movies es una manera fácil y rápida de organizar las películas que has visto y tener tu filmoteca personal en línea. Las funciones principales de la página son la capacidad de ver tu filmoteca personal además de poder añadir y eliminar películas.
+## The page
+My Movies is a web page where the user can save watched movies as well as seen te movies list with all the information displayed as wel as deleting the movies. Another feature is the searchbar which the user can use to search a specific movie. The web app is completely responsive and works on phone and tablet.
 
-<h2>Como se utiliza:</h2>
-Para empezar se debe clonar el repositorio y abrir un servidor local. Esto se puede hacer con los comandos en, por ejemplo, la terminal de VScode. Luego deberemos utilizar los comandos para ejecutar el servidor .json.
+![](resources/filmoteca1.png)
+![](resources/filmoteca2.png)
+![](resources/filmoteca3.png)
+![](resources/filmoteca4.png)
 
-<h2>Comandos:</h2>
-<center>-- Instala en global el servidor de la Fake Api<br>
-Linux, Mac:<br>
-   		sudo npm install -g json-server<br>
-Windows:<br>
-		npm install -g json-server<br><br><br>
+## The repo structure
+This repo contains several documents and folders. There are two folders for the CSS and the JavaScript documents as well as a folder for the images, logo and resources. Then there is an index.html and the JSON document that acts as a fake api
 
--- Ejecuta el servidor json<br>
-json-server --watch peliculas.json<br></center>
+## How to use
+This is a public repo so anyone who wants to usit feel free to clone it.
+`https://github.com/UriCV/Filmoteca`
+If you want to use this repo you should clone it and install the server that will acces the fake api with the following comand:
 
-Hecho esto lo último que queda es abrir la página en nuestro navegador con el Live Server.
+Linux, Mac:
+   		`sudo npm install -g json-server`
+<br>
+Windows:
+		`npm install -g json-server`
 
-<h2>Cómo utilizar:</h2>
-Para poder añadir una película a nuestra librería deberemos hacer click en Add Film en la parte superior para que se despliegue el formulario (tenga en cuenta que se deben rellenar todos los campos del formulario para que funcione). Por último podemos eliminar las películas ya creadas con el botón delete. La página es responsive y se puede utilizar en todo tipo de dispositivos.
+Then launch the server: `json-server --watch peliculas.json`
 
-<h2>Bugs y consejos:</h2>
-La página tiene un bug que no permite añadir una entrada si no se rellenan todos los datos del formulario. Cabe destacar que para añadir las imágenes de las películas es recomendable utilizar las imágenes de la página de filmaffinity que tiene las carátulas originales de las películas con el mismo tamaño para que nos cuadre bien.
+## Future versions
+For next updates the user will be able tho edit the information of the movies (update from CRUD) as well as the ability to add comments to the movies. The user will also be provided with a confirmation message before deleting a movie.
 
+## Tools that made possible this project
+- HTML
+- CSS
+- GitHub
+- Figma
+- VScode
+- Bootstrap
+- Postman
 
-<h2>Futuras versiones:</h2>
-En futuras versiones el usuario tendrá la posibilidad de editar la información ya añadida (Update del CRUD) además de disponer de un buscador y filtros para navegar con más facilidad en la filmoteca. Cabe destacar que en próximas versiones también se tiene el objetivo de añadir una página de inicio así como una forma más ágil y estética de ver la información de las películas, ya sea con desplegables o abriendo el título que se desee consultar en otra página. Además de la capacidad de añadir comentarios y la posibilidad de poner las películas en una lista de ¨pendientes por ver¨.
+## Author
+- [Uri C. V.](https://github.com/UriCV)
 
-<h2>El repo:</h2>
-Este proyecto contiene carpetas, entre ellas están la carpeta con el documento JS funcional, una carpeta llamada pruebasJS con documentos JavaScript que no son útiles para el funcionamiento de la página y que contienen varias funciones para hacer pruebas. También está la carpeta CSS para el documento .css. También está la carpeta de recursos con imágenes y cosas útiles para el proyecto. Por último consta de dos archivos, el html y el json que funciona como nuestra fake API.
-
-<h2>Herramientas:</h2>
-JavaScript, .html, .css, notación .json, Bootsrap, Postman y VS Code.
-
-
-<h2>Creado por:</h2>
-Oriol Codina
-
-<h2>Agradecimientos a Factoria F5 por hacer posible esta formación.</h2>
+## Acknowledgments
+Thanks to FactoriaF5 🧡 for training future coders!
