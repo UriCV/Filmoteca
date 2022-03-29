@@ -1,4 +1,5 @@
 const requestURL = 'http://localhost:3000/movies'
+const inputSearch = document.getElementById('search')
 
 
 async function fetchMoviesJSON(){
@@ -84,3 +85,14 @@ function deleteFilm(id){
     .then(response => response.json())
     .then(fetchMoviesJSON)
 }
+
+// make a searchbar
+inputSearch.addEventListener('keyup', function (event) {
+    let search = event.target.value.toLowerCase()
+    let movies = fetchMoviesJSON().then(movies => {
+        let filteredMovies = movies.filter(movie => {
+            return movie.titulo.toLowerCase().includes(search)
+        })
+        renderMovies(filteredMovies)
+    })
+})
